@@ -46,7 +46,6 @@ app.post("/new", async (req, res) => {
 // QUESTION 5. Use a mongoose method to find all the cards we have in our database.
 // Check out the lecture slides, specifically slide 28! Don't forget the await keyword.
 app.get("/cards", async (req, res) => {
-    let id = req.params.id
     const foundCards = await Flashcard.find()
     res.send(foundCards)
 })
@@ -56,6 +55,7 @@ app.get("/cards", async (req, res) => {
 app.get("/card/:id", async (req, res) => {
     let id = req.params.id
     const foundCard = await Flashcard.findById(id)
+    // console.log(foundCard)
     res.send(foundCard)
 })
 
