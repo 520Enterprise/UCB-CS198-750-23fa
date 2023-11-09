@@ -68,3 +68,44 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+
+
+# Social Media Website
+
+## Overview
+
+This is a React teaching project that familiarizes people with some concepts of React, such as hook and route
+
+## Features
+
+People can comment on photos and access a homepage
+
+## Running The Project
+
+### `npm start`
+
+Download dependencies.
+
+### `npm start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
+
+
+
+## Dependencies
+
+```json
+"react": "^18.2.0",
+"react-dom": "^18.2.0",
+"react-router-dom": "^6.4.3",
+"react-scripts": "5.0.1",
+"web-vitals": "^2.1.4"
+```
+
