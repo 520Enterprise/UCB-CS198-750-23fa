@@ -43,3 +43,36 @@ roote 的定义: `app.METHOD(PATH, HANDLER)`，其中
 - `HANDLER` 是 roote 匹配时执行的函数。
 
 具体地看这个作业的代码就懂了
+
+# HW9
+
+```react
+{comments.map((comment, index) => {
+    /* Task 3: Use the <Comment> component to render each comment */
+    /* YOUR CODE HERE */
+    return <Comment key={index} text={comment}/>
+})}
+```
+
+注意这段代码，其中`key`属性是React中用于标识列表项的唯一性的特殊属性。当我们在渲染动态列表时，每个列表项都需要有一个唯一的`key`值。这样React可以更有效地追踪和管理列表项的更新。
+
+还要注意一个叫做**解构赋值语法**的东西
+
+```javascript
+const person = {
+  name: 'Alice',
+  age: 25,
+  address: {
+    city: 'New York',
+    country: 'USA'
+  }
+};
+
+// 从对象中提取name和country属性
+const { name, address: { country } } = person;
+
+console.log(name); // 输出: Alice
+console.log(country); // 输出: USA
+```
+
+在上面的例子中，我们定义了一个名为`person`的对象。通过使用解构赋值语法，我们从对象中提取`name`属性并将其赋给`name`变量，同时从`address`属性中提取`country`属性并将其赋给`country`变量。
